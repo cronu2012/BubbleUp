@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MainActivity">
+
+    <EditText
+        android:id="@+id/etDsaccount"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="160dp"
+        android:ems="10"
+        android:hint="@string/etId"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/etPassword"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/etDsaccount"
+        app:layout_constraintTop_toBottomOf="@+id/etDsaccount" />
+
+    <Button
+        android:id="@+id/btnDslogin"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_button_radius_blue"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:text="@string/btnLogin"
+        app:layout_constraintStart_toStartOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_button_radius_blue"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:text="@string/btnRegister"
+        app:layout_constraintStart_toStartOf="@+id/btnDslogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnDslogin" />
+
+
+    <ImageView
+        android:id="@+id/ivTextLogo"
+        android:layout_width="300dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/text_logo"
+        app:layout_constraintStart_toStartOf="@+id/btnDslogin"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLogo"
+        android:layout_width="100dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="524dp"
+        android:background="@drawable/logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDsLogin"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/background_button_radius_blue"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:text="@string/btnDsLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
+
+    <Button
+        android:id="@+id/btnMem"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/ic_group_black_24dp"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/etDsaccount"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDs"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/ic_home_black_24dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/etDsaccount"
+        app:layout_constraintTop_toTopOf="@+id/btnMem" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,143 @@
+<resources>
+    <!--登入頁面activity_login-->
+    <string name="app_name">BubbleUp</string>
+    <string name="etId">請輸入帳號</string>
+    <string name="etPassword">請輸入密碼</string>
+    <string name="btnRegister">註冊會員</string>
+    <string name="btnLogin">會員登入</string>
+    <string name="btnDsLogin">潛店登入</string>
+    <string name="tvTitle">全台最猛線上潛水社群平台</string>
+
+    <string name="tvUserid">請輸入帳號：</string>
+    <string name="btnConfirmId">檢查帳號</string>
+    <string name="etUseridHint">長度六至十位的英數字</string>
+    <string name="tvUserpsw">請輸入密碼：</string>
+    <string name="etUserpswHint">長度六至十四位，須包含英文與數字</string>
+    <string name="etUserpswHintagain">請再次輸入密碼</string>
+    <string name="tvIdCol">會員帳號：</string>
+    <string name="tvNameCol">會員姓名：</string>
+    <string name="tvSexCol">性別：</string>
+    <string name="tvBirCol">出生日期：</string>
+    <string name="tvMailCol">電子郵件：</string>
+    <string name="tvPhoneCol">電話：</string>
+    <string name="tvAddCol">地址：</string>
+    <string name="tvDateCol">註冊日期：</string>
+    <string name="rdMale">男性</string>
+    <string name="rdFemale">女性</string>
+    <string name="btnSubmit">確認送出</string>
+    <string name="btnClear">清除資料</string>
+    <string name="UserIdOK">此帳號可使用</string>
+    <string name="tvLesson">課程清單</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="navigation_diveshop">潛店</string>
+    <string name="navigation_divepiont">潛點</string>
+    <string name="navigation_mypage">個人頁面</string>
+    <string name="navigation_point">地圖</string>
+    <string name="navigation_chatRoom">聊天室</string>
+
+
+    <string name="nav_memInfo">會員資料</string>
+    <string name="nav_ordQuery">我的訂單紀錄</string>
+    <string name="nav_about">關於BubbleUp</string>
+    <string name="nav_callUs">聯絡我們</string>
+    <string name="nav_report">檢舉</string>
+    <string name="nav_logout">登出</string>
+    <string name="btnLogout">確定</string>
+
+    <string name="col_dsname">店名:</string>
+    <string name="col_dsaddress">地址:</string>
+    <string name="col_dsphone">電話:</string>
+    <string name="col_dsmail">E-mail:</string>
+
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+
+    <string name="Area">依地區搜尋</string>
+    <string name="btn_LessonList">買課程</string>
+    <string name="btn_EquipList">租裝備</string>
+    <string name="btnMap">如何前往</string>
+    <string name="btnFindLes">找課程</string>
+    <string name="btnAboutus">潛店介紹</string>
+    <string name="rorder">租賃訂單紀錄</string>
+    <string name="lesorder">課程訂單紀錄</string>
+
+
+    <string name="rorderdetail">訂單資訊</string>
+    <string name="tvLesOrno">訂單編號：</string>
+    <string name="tvLesNo">課程編號：</string>
+    <string name="tvDsNameLes">上課潛店：</string>
+    <string name="tvLesName">課程名稱：</string>
+    <string name="tvCoach">教練姓名：</string>
+    <string name="tvCost">課程費用：</string>
+    <string name="tvStLesDate">開課日期：</string>
+    <string name="tvSignup">報名課程</string>
+    <string name="title_signupOK">報名成功！</string>
+    <string name="msg_signupOK">，恭喜你成功報名</string>
+    <string name="title_signupFail">報名失敗...</string>
+    <string name="msg_signupFail"></string>
+
+    <string name="tvDpTitle">潛點列表</string>
+    <string name="btnDpMarker">前往地圖</string>
+
+    <string name="tvRono">訂單編號：</string>
+    <string name="tvDsno">潛店編號：</string>
+    <string name="tvMemname">會員姓名：</string>
+    <string name="tvTepc">裝備數量：</string>
+    <string name="tvTpriz">總金額：</string>
+    <string name="tvOpstate">付款狀態：</string>
+    <string name="tvRsdate">租賃開始日期：</string>
+    <string name="tvRddate">應歸還日期：</string>
+    <string name="tvOstate">訂單狀態：</string>
+    <string name="tvOnote">訂單備註：</string>
+    <string name="tvEquipDetail">租賃清單品項：</string>
+    <string name="btnToQrcode">領取裝備</string>
+
+    <string name="tvGetEquip">領取租賃裝備</string>
+
+
+    <string name="msg_DiveshopNotFound">找不到潛店</string>
+    <string name="msg_ListNotFound">無此清單</string>
+    <string name="msg_FailRegister">創建失敗...</string>
+    <string name="msg_SuccessRegisterAccount">新會員創建成功！</string>
+    <string name="msg_noSelectSex">請選擇性別！</string>
+    <string name="msg_NoNetwork">無效網路環境</string>
+    <string name="msg_InvalidUserOrPassword">無效的帳號或密碼</string>
+    <string name="msg_UserIdExist">此帳號已被建立</string>
+    <string name="msg_CannotEmpty">不可為空白！</string>
+    <string name="msg_sysmsg">系統訊息</string>
+    <string name="msg_underline">確定要登出嗎？</string>
+    <string name="btn_sure">確定</string>
+    <string name="btn_cancel">取消</string>
+
+    <string name="text_Upload">上傳大頭貼</string>
+    <string name="text_btUpload">上傳</string>
+    <string name="text_Response">照片</string>
+    <string name="text_NotGranted">未授權</string>
+    <string name="msg_NoCameraApp">找不到相機功能...</string>
+    <string name="msg_NotUploadWithoutPicture">沒有相片</string>
+
+
+    <string name="hint_etLocationName">location name or address</string>
+    <string name="text_btDistance">Distance</string>
+    <string name="text_btDirect">Direct</string>
+    <string name="msg_LastLocationNotAvailable">The last location is not available, please wait for a while</string>
+    <string name="msg_GoogleApiClientConnectionFailed">GoogleApiClient connection failed</string>
+    <string name="msg_GoogleApiClientConnectionSuspended">GoogleApiClient connection suspended</string>
+    <string name="msg_LocationNotAvailable">Location is not available</string>
+    <string name="msg_InvalidInput">Invalid input</string>
+    <string name="text_ShouldGrant">Permission to access location should be granted</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_basicmap">BasicmapActivity</string>
+    <string name="msg_notSupport">Sensor is not support</string>
+    <string name="light">陽光</string>
+
+
+</resources>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Member.RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/tvNameCol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvNameCol"
+        android:textColor="@color/colorTitle"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/tvUserid"
+        app:layout_constraintTop_toBottomOf="@+id/etUserPswAgain" />
+
+    <TextView
+        android:id="@+id/tvSexCol"
+        android:layout_width="75dp"
+        android:layout_height="39dp"
+        android:text="@string/tvSexCol"
+        android:textColor="@color/colorTitle"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/tvNameCol"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <TextView
+        android:id="@+id/tvBirCol"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/tvBirCol"
+        android:textColor="@color/colorTitle"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/tvAddCol"
+        app:layout_constraintTop_toBottomOf="@+id/etAddress" />
+
+    <TextView
+        android:id="@+id/tvMailCol"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/tvMailCol"
+        android:textColor="@color/colorTitle"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/tvNameCol"
+        app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+    <TextView
+        android:id="@+id/tvPhoneCol"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/tvPhoneCol"
+        android:textColor="@color/colorTitle"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/tvNameCol"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupSex" />
+
+    <TextView
+        android:id="@+id/tvAddCol"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/tvAddCol"
+        android:textColor="@color/colorTitle"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/tvNameCol"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintStart_toStartOf="@+id/tvNameCol"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameCol" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintStart_toEndOf="@+id/tvPhoneCol"
+        app:layout_constraintTop_toTopOf="@+id/tvPhoneCol" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupSex"
+        android:layout_width="134dp"
+        android:layout_height="66dp"
+        app:layout_constraintStart_toEndOf="@+id/tvSexCol"
+        app:layout_constraintTop_toBottomOf="@+id/etName">
+
+        <RadioButton
+            android:id="@+id/rdMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdMale" />
+
+        <RadioButton
+            android:id="@+id/rdFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdFemale" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/tvNameCol"
+        app:layout_constraintTop_toBottomOf="@+id/tvMailCol" />
+
+    <Spinner
+        android:id="@+id/spCitys"
+        android:layout_width="138dp"
+        android:layout_height="34dp"
+        app:layout_constraintStart_toEndOf="@+id/tvAddCol"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tvAddCol"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddCol" />
+
+    <Spinner
+        android:id="@+id/spYear"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/tvBirCol"
+        app:layout_constraintTop_toBottomOf="@+id/tvBirCol" />
+
+    <Spinner
+        android:id="@+id/spMonth"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/spYear"
+        app:layout_constraintTop_toBottomOf="@+id/tvBirCol" />
+
+    <Spinner
+        android:id="@+id/spDate"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/spMonth"
+        app:layout_constraintTop_toBottomOf="@+id/tvBirCol" />
+
+    <TextView
+        android:id="@+id/tvUserid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tvUserid"
+        android:textColor="@color/colorTitle"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/etUseridHint"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/tvUserid"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserid" />
+
+    <TextView
+        android:id="@+id/tvUserpsw"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="@string/tvUserpsw"
+        android:textColor="@color/colorTitle"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/tvUserid"
+        app:layout_constraintTop_toBottomOf="@+id/etUserId" />
+
+    <EditText
+        android:id="@+id/etUserPsw"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/etUserpswHint"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/tvUserid"
+        app:layout_constraintTop_toBottomOf="@+id/tvUserpsw" />
+
+    <EditText
+        android:id="@+id/etUserPswAgain"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/etUserpswHintagain"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/tvUserid"
+        app:layout_constraintTop_toBottomOf="@+id/etUserPsw" />
+
+    <Button
+        android:id="@+id/btnFindLes"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_button_radius_blue"
+        android:textColor="#ffffff"
+        android:text="@string/btnSubmit"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/spYear"
+        app:layout_constraintTop_toBottomOf="@+id/spYear" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="122dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_button_radius_blue"
+        android:textColor="#ffffff"
+        android:text="@string/btnClear"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/spDate"
+        app:layout_constraintTop_toTopOf="@+id/btnFindLes" />
+
+    <Button
+        android:id="@+id/btnConfirmId"
+        android:layout_width="87dp"
+        android:layout_height="37dp"
+        android:text="@string/btnConfirmId"
+        android:textSize="14dp"
+        app:layout_constraintStart_toEndOf="@+id/etUserId"
+        app:layout_constraintTop_toTopOf="@+id/etUserId" />
+
+    <Button
+        android:id="@+id/btnMagic"
+        android:layout_width="61dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/background_button_radius_blue"
+        android:textColor="#ffffff"
+        android:text="Go!"
+        app:layout_constraintEnd_toEndOf="@+id/btnConfirmId"
+        app:layout_constraintTop_toBottomOf="@+id/btnConfirmId" />
+</androidx.constraintlayout.widget.ConstraintLayout>
